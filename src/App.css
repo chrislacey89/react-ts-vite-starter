@@ -28,13 +28,14 @@ p {
 }
 
 button {
-  outline: none;
-  border: none;
-  border-radius: 8px;
   padding: 10px 35px;
+  border: none;
 
   background: #845ec2;
+  border-radius: 8px;
   color: white;
+  font-size: calc(10px + 2vmin);
+  outline: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -44,16 +45,16 @@ button {
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
 
   background: var(--bg-primay);
+  background-color: #282c34;
   color: var(--primay);
+  font-size: calc(10px + 2vmin);
 }
 
 .App-link {
@@ -68,8 +69,4 @@ button {
   to {
     transform: rotate(360deg);
   }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
 }
