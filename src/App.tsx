@@ -13,7 +13,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p className="header">
           🚀 Vite + React + Typescript 🤘 & <br />
-          Eslint 🔥+ Prettier
+          Eslint 🔥+ Prettier & Stylelint 💅
         </p>
 
         <div className="body">
