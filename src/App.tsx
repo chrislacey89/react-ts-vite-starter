@@ -1,12 +1,16 @@
 import './App.css';
 
+import Button from '@mui/material/Button';
 import React, { useState } from 'react';
+import { Toaster } from 'react-hot-toast';
 
+import { useGetTodos } from './hooks/api/useGetTodos';
 import logo from './logo.svg';
 
 function App() {
   const [count, setCount] = useState(0);
 
+  useGetTodos();
   return (
     <div className="App">
       <header className="App-header">
@@ -17,9 +21,12 @@ function App() {
         </p>
 
         <div className="body">
-          <button onClick={() => setCount((count) => count + 1)}>
+          <Button onClick={() => setCount((count) => count + 1)} variant="contained">
             🪂 Click me : {count}
-          </button>
+          </Button>
+          {/* <Button onClick={() => setCount((count) => count + 1)} variant="contained">
+            🪂 Click me : {count}
+          </Button> */}
 
           <p> Don&apos;t forgot to install Eslint and Prettier in Your Vscode.</p>
 
@@ -45,6 +52,7 @@ function App() {
           </p>
         </div>
       </header>
+      <Toaster />
     </div>
   );
 }
