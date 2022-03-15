@@ -14,7 +14,7 @@ function Home() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p className="header">
-          🚀 Vite + React + Typescript 🤘 & <br />
+          🚀 Vite React + asdfTypescript 🤘 & <br />
           Eslint 🔥+ Prettier & Stylelint 💅
         </p>
 
