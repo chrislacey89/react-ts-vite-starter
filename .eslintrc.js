@@ -8,7 +8,8 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {
-    'no-unused-private-class-members': 'off', // off because eslint is giving a strange error
-    'prefer-object-has-own': 'off', // off because eslint is giving a strange error
+    'no-unused-private-class-members': 'off',
+    'react/iframe-missing-sandbox': 'warn',
+    'prefer-object-has-own': 'off',
   },
-};
+}

@@ -1,5 +1,5 @@
-import { toast } from 'react-hot-toast';
-import { QueryClient } from 'react-query';
+import { toast } from 'react-hot-toast'
+import { QueryClient } from 'react-query'
 
 // const toast = createStandaloneToast({ theme });
 
@@ -9,13 +9,13 @@ export function queryErrorHandler(error: unknown): void {
     error instanceof Error
       ? // remove the initial 'Error: ' that accompanies many errors
         error.toString().replace(/^Error:\s*/, '')
-      : 'error connecting to server';
+      : 'error connecting to server'
 
   // prevent duplicate toasts
   // toast.closeAll();
   toast.error(title, {
     id: title,
-  });
+  })
 }
 
 export const queryClient = new QueryClient({
@@ -27,4 +27,4 @@ export const queryClient = new QueryClient({
       onError: queryErrorHandler,
     },
   },
-});
+})

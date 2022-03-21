@@ -1,13 +1,13 @@
-import './index.css';
+import './index.css'
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { QueryClientProvider } from 'react-query';
-import { ReactQueryDevtools } from 'react-query/devtools';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { QueryClientProvider } from 'react-query'
+import { ReactQueryDevtools } from 'react-query/devtools'
+import { BrowserRouter as Router } from 'react-router-dom'
 
-import App from './App';
-import { queryClient } from './react-query/queryClient';
+import App from './App'
+import { queryClient } from './react-query/queryClient'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,4 +19,4 @@ ReactDOM.render(
     </QueryClientProvider>
   </React.StrictMode>,
   document.getElementById('root'),
-);
+)
